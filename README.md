@@ -296,6 +296,7 @@ Latest release notes: [CHANGELOG.md](CHANGELOG.md).
 <th>Khoj (35K ⭐)</th>
 <th>supermemory (26K ⭐)</th>
 <th>MemPalace (54K ⭐)</th>
+<th>oracleagentmemory</th>
 <th>Hippo</th>
 <th>Built-in (CLAUDE.md)</th>
 </tr>
@@ -307,6 +308,7 @@ Latest release notes: [CHANGELOG.md](CHANGELOG.md).
 <td>Personal AI</td>
 <td>Memory API + app</td>
 <td>Vector memory (OSS)</td>
+<td>Memory engine (Oracle DB)</td>
 <td>Memory system</td>
 <td>Static file</td>
 </tr>
@@ -318,6 +320,7 @@ Latest release notes: [CHANGELOG.md](CHANGELOG.md).
 <td>N/A</td>
 <td>Self-reported</td>
 <td>~96.6% (self-reported)</td>
+<td>94.4% (self-reported)</td>
 <td>N/A</td>
 <td>N/A (grep)</td>
 </tr>
@@ -329,6 +332,7 @@ Latest release notes: [CHANGELOG.md](CHANGELOG.md).
 <td>Manual</td>
 <td>API-side extraction</td>
 <td>Manual</td>
+<td>API extraction</td>
 <td>Manual</td>
 <td>Manual editing</td>
 </tr>
@@ -340,6 +344,7 @@ Latest release notes: [CHANGELOG.md](CHANGELOG.md).
 <td>Semantic</td>
 <td>Vector + RAG</td>
 <td>Vector-only</td>
+<td>Vector + semantic</td>
 <td>Decay-weighted</td>
 <td>Loads everything into context</td>
 </tr>
@@ -351,6 +356,7 @@ Latest release notes: [CHANGELOG.md](CHANGELOG.md).
 <td>No</td>
 <td>No</td>
 <td>No</td>
+<td>Scoped only</td>
 <td>Multi-agent shared</td>
 <td>Per-agent files</td>
 </tr>
@@ -362,6 +368,7 @@ Latest release notes: [CHANGELOG.md](CHANGELOG.md).
 <td>Standalone</td>
 <td>None</td>
 <td>None</td>
+<td>Oracle Database</td>
 <td>None</td>
 <td>Per-agent format</td>
 </tr>
@@ -373,6 +380,7 @@ Latest release notes: [CHANGELOG.md](CHANGELOG.md).
 <td>Multiple</td>
 <td>Managed cloud</td>
 <td>Vector store</td>
+<td>Oracle AI Database</td>
 <td>None</td>
 <td>None</td>
 </tr>
@@ -384,6 +392,7 @@ Latest release notes: [CHANGELOG.md](CHANGELOG.md).
 <td>Manual</td>
 <td>Auto-forget</td>
 <td>None</td>
+<td>Not stated</td>
 <td>Decay + consolidation</td>
 <td>Manual pruning</td>
 </tr>
@@ -395,6 +404,7 @@ Latest release notes: [CHANGELOG.md](CHANGELOG.md).
 <td>Varies</td>
 <td>Cloud pricing</td>
 <td>No token budget</td>
+<td>LLM-backed (varies)</td>
 <td>Varies</td>
 <td>22K+ tokens at 240 obs</td>
 </tr>
@@ -408,6 +418,7 @@ Latest release notes: [CHANGELOG.md](CHANGELOG.md).
 <td>No</td>
 <td>No</td>
 <td>No</td>
+<td>No</td>
 </tr>
 <tr>
 <td><strong>Self-hosted</strong></td>
@@ -417,12 +428,13 @@ Latest release notes: [CHANGELOG.md](CHANGELOG.md).
 <td>Yes</td>
 <td>No (cloud-only)</td>
 <td>Yes</td>
+<td>Yes (Oracle DB)</td>
 <td>Yes</td>
 <td>Yes</td>
 </tr>
 </table>
 
-<sub>Benchmark note: only agentmemory's R@5 is our own measured result (LongMemEval-S, reproducible from <a href="benchmark/COMPARISON.md"><code>benchmark/COMPARISON.md</code></a>). The mem0 and Letta figures are their published LoCoMo numbers (a different dataset); the MemPalace and supermemory figures are vendor self-reported claims we have not independently reproduced. Shown side by side for ballpark only, not a head-to-head on identical data. Star counts are approximate and drift over time.</sub>
+<sub>Benchmark note: only agentmemory's R@5 is our own measured result (LongMemEval-S, reproducible from <a href="benchmark/COMPARISON.md"><code>benchmark/COMPARISON.md</code></a>). The mem0 and Letta figures are their published LoCoMo numbers (a different dataset); the MemPalace, supermemory, and oracleagentmemory figures are vendor self-reported claims we have not independently reproduced (oracleagentmemory's run used GPT-5.5 against an Oracle AI Database). Shown side by side for ballpark only, not a head-to-head on identical data. Star counts are approximate and drift over time.</sub>
 
 ---
 
