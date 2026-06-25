@@ -4,7 +4,10 @@ import { basename, join } from "node:path";
 import dotenv from "dotenv";
 import { homedir } from "node:os";
 //#region src/hooks/_env.ts
-dotenv.config({ path: join(homedir(), ".agentmemory", ".env") });
+dotenv.config({
+	path: join(homedir(), ".agentmemory", ".env"),
+	quiet: true
+});
 //#endregion
 //#region src/hooks/_project.ts
 function resolveProject(cwd) {

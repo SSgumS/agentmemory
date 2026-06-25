@@ -3,7 +3,10 @@ import dotenv from "dotenv";
 import { homedir } from "node:os";
 import { join } from "node:path";
 //#region src/hooks/_env.ts
-dotenv.config({ path: join(homedir(), ".agentmemory", ".env") });
+dotenv.config({
+	path: join(homedir(), ".agentmemory", ".env"),
+	quiet: true
+});
 //#endregion
 //#region src/hooks/stop.ts
 function isSdkChildContext(payload) {
